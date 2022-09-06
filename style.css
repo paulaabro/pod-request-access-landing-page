@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap');
+
+:root {
+  --red: #fb3e3e;
+  --green: #54E6AF;
+  --dark-grayish-blue: #2c344b;
+  --light-grayish-blue: #5a668a;
+  --dark-gray: #121725;
+  --light-gray: #c2cbe5;
+  --white: #fff;
+}
+
+body {
+  font-weight: 300;
+  font-family: 'Chivo', sans-serif;
+  background-color: var(--dark-gray);
+}
+
+main {
+  width: 90vw;
+  text-align: center;
+  margin: 62px auto;
+}
+
+picture img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0.2;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1, h2 {
+  font-size: 27px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--green);
+  margin-top: 57px;
+}
+
+h2 {
+  color: var(--white);
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--light-gray);
+  margin: 16px 0 33px;
+}
+
+.medias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.medias img {
+  height: 14px;
+}
+
+.oval {
+  width: 100%;
+  height: 46px;
+  border-radius: 28px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+input {
+  display: block;
+  background-color: var(--dark-grayish-blue);
+  font-weight: 700;
+  font-family: 'Chivo', sans-serif;
+  color: var(--white);
+
+  text-align: left;
+  padding-left: 32px;
+  margin: 48px auto 0;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-weight: 700;
+  font-family: 'Chivo', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 8px;
+}
+
+.info.err {
+  color: var(--red);
+}
+
+.info.success {
+  color: var(--green);
+}
+
+
+button {
+  display: block;
+  background-color: var(--green);
+  box-shadow: 0 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  margin-top: 16px;
+}
