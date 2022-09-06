@@ -131,7 +131,7 @@ button {
     background-image: url("assets/tablet/bg-pattern-dots.svg");
     background-repeat: no-repeat;
     background-position: bottom left 30px;
-    margin-bottom: 152px;
+    margin-bottom: 100px;
   }
 
   main {
@@ -143,13 +143,14 @@ button {
   picture img {
     position: absolute;
     width: 64vw;
-    height: 87vh;
+    height: 95vh;
     opacity: 1;
     left: 36vw;
   }
 
   .text {
     width: 635px;
+    height: 509px;
     background-color: var(--dark-gray);
     display: grid;
     grid-template-columns: 82vw;
@@ -162,6 +163,8 @@ button {
 
     padding: 92px 0 10px;
     margin-top: 153px;
+
+    align-items: center;
   }
 
   h1, h2 {
@@ -177,11 +180,11 @@ button {
     width: 445px;
     font-size: 18px;
     line-height: 28px;
-    margin: 31px 0 40px;
+    margin: 0;
   }
 
   .input-container {
-    width: 56vw;
+    width: 66%;
     height: 56px;
     position: relative;
   }
@@ -190,12 +193,10 @@ button {
     grid-area: medias;
     justify-content: start;
     gap: 40px;
-    margin-top: 64px;
   }
 
   .medias img {
-    /* TODO: find value */
-    height: 20px;
+    height: 24px;
   }
 
   .oval {
@@ -203,8 +204,12 @@ button {
     height: 100%;
   }
 
-  input {
+  .input-container {
     grid-area: input;
+    width: 427px;
+  }
+
+  input {
     margin: 0;
   }
 
@@ -220,5 +225,52 @@ button {
 
     right: 5px;
     top: 5px;
+  }
+}
+
+@media (min-width: 1110px) {
+  body {
+    background-position: bottom 25vh right;
+    margin: 0;
+  }
+
+  main {
+    max-width: 1110px;
+    margin-top: 130px;
+  }
+
+  picture img {
+    width: 888px;
+    height: auto;
+    opacity: 0.5;
+    left: unset;
+    right: 0;
+    top: calc(50vh - 320px)
+  }
+
+  .text {
+    width: 723px;
+    height: 550px;
+    padding: 60px 0 10px;
+
+    margin-top: 11%;
+  }
+
+  h1, h2 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .input-container {
+    margin-top: -40px;
+  }
+
+  button {
+    transition: all 500ms;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #B3FFE2;
   }
 }
